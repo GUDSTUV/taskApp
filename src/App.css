@@ -1,0 +1,77 @@
+#root {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.dark-mode-toggle{
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 1rem;
+}
+
+/* App.css */
+body {
+    background-color: rgb(255, 255, 255);
+    color: #000000;
+    transition: background-color 0.3s, color 0.3s;
+  }
+
+/* Light Mode (default) */
+
+.App {
+  background-color: #000000;
+  color: #000;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+
+
+/* Dark Mode */
+html.dark body,
+html.dark .App {
+  background-color: #000000;
+  color: #fff;
+}
+
+
+
+.dark-mode-toggle {
+  padding: 10px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+/* Additional Styling for TaskManager */
+
+
+
+button {
+
+  cursor: pointer;
+}
+
+.task {
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.task.completed h3 {
+  text-decoration: line-through;
+  color: #888;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .task-input input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  button {
+    padding: 8px;
+    font-size: 1em;
+  }
+}
